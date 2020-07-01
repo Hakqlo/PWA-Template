@@ -1,0 +1,76 @@
+//what a nice name!!(aaaarrggggghhhh!!!)
+$b_rad : min(calc(min(50vw,50vh) - 20px), 200px);
+$b_dia : calc(#{$b_rad} * 2);
+$base_font_size : calc(#{$b_rad} * 0.4);
+$install_icon : url('../icon/install.svg');
+body{
+  //background-repeat: no-repeat;
+  //background-size: 100vw 100vh;
+  //background-position-y: top;
+  //background: linear-gradient(170deg, rgb(0, 0, 0),rgb(10, 15, 85) 100vh, rgb(18, 104, 218) 200vh,rgb(248, 102, 253) 300vh);
+  //transition: background-position-y 1s ease;
+}
+canvas{/*
+  position: fixed;
+  top:-10px;
+  left:-10px;*/
+  margin: 0;
+  z-index: -3;
+  //filter: blur(10px);
+}
+body.install_pressed{
+  //background-position-y: bottom;
+  #install_button{
+    background: rgba(0, 211, 255, 0.66);
+    color: white;
+    filter: none;
+    //filter: drop-shadow(0 0 0px rgb(25, 152, 255));;
+    &::before{
+      //background: radial-gradient(rgba(255,255,255,0.8) 20%, rgba(153, 153, 153, 0.568));
+    }
+  }
+}
+#install_button{
+  
+  position: absolute;
+  transition: 1s ease;
+  border-radius: $b_rad;
+  width: $b_dia;
+  height: $b_dia;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: rgb(54, 115, 210);
+  backdrop-filter: grayscale(100%) ;
+  -webkit-backdrop-filter: grayscale(100%) ;
+  filter: drop-shadow(0 0 10px rgb(25, 152, 255));
+  color: white;
+  //filter: invert(1);
+  
+  font-size: $base_font_size;
+  #txt {
+    &::after{
+      mix-blend-mode: difference;
+    }
+  }
+  &::after{
+    background: linear-gradient(transparent , rgba(0, 0, 0, 0.6));
+  }
+  &::before{
+    width:100%;
+    height:100%;
+    z-index: -1;
+  }
+  div#install_icon{
+    display: inline-block;
+    vertical-align: middle;
+    backdrop-filter: invert(1);
+    -webkit-backdrop-filter: invert(1);
+    -webkit-mask: $install_icon no-repeat center;
+    mask: $install_icon no-repeat center;
+    width: $base_font_size;
+    height: $base_font_size;
+  }
+}

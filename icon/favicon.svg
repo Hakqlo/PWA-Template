@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" version="1.1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <linearGradient id="linearGradient1502" x1="23.352" x2="58.327" y1="-4.6633" y2="81.608" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#01fdff" offset="0"/>
+   <stop stop-color="#dc00ff" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g transform="matrix(2.1444 0 0 2.1444 9.9244 20)" fill="url(#linearGradient1502)">
+  <path d="m28 48.498-14 24.248h13.986l6.998-12.121 0.02539 0.01563zm13.992 24.236-0.0059 0.01172h0.013712z"/>
+  <path d="m49 60.623-7 12.123h28l7-12.123h-14z"/>
+  <path d="m28 0-7.0449 12.199 6.957 12.049h14.088z"/>
+  <path d="m14 24.248-14 24.25 7 12.123 3.5-6.0625 10.5-18.186z"/>
+  <path d="m63 36.371-7 12.127h28l-7-12.127h-13.998z"/>
+  <path d="m42 0 7 12.125 7 12.123h14l-3.5-6.0605-10.5-18.188z"/>
+  <path d="m28 48.498h28l-14-24.249z"/>
+ </g>
+</svg>
